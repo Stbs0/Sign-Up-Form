@@ -8,7 +8,9 @@
   </head>
   <body>
     <div class="container">
-      <div class="side-bar-image"></div>
+      <div class="side-bar-image">
+        <div><p>LOGO</p></div>
+      </div>
       <div class="main-content">
         <header class="header">
           <p class="main-header">
@@ -20,34 +22,74 @@
         <main class="card-container">
           <div class="card">
             <p class="go">Register here please</p>
-            <form action="" method="post">
+            <form id="form" action="#" method="post">
               <div class="col1">
-                <label for="first"
-                  >First Name<input type="text" id="first" name="First-name" />
-                </label>
-                <label for="email"
-                  ><input type="email" id="email" name="email" />
-                </label>
-                <label for="pwd"
-                  ><input type="password" id="pwd" name="password" />
-                </label>
+                <div class="input">
+                  <label for="first"
+                    >First Name<input
+                      type="text"
+                      id="first"
+                      name="First-name"
+                      required
+                    />
+                  </label>
+                </div>
+                <div class="input">
+                  <label for="email">
+                    Email<input type="email" id="email" name="email" required />
+                  </label>
+                </div>
+                <div class="input">
+                  <label for="pwd"
+                    >Password<input
+                      type="password"
+                      id="pwd"
+                      name="password"
+                      required
+                    />
+                  </label>
+                </div>
               </div>
 
               <div class="col2">
-                <label for="last"
-                  >Last Name<input type="text" id="last" name="last-name" />
-                </label>
-                <label for="phone"
-                  ><input type="text" id="phone" name="telephone" />
-                </label>
-                <label for="copwd"
-                  ><input type="text" id="copwd" name="confirm-password" />
-                </label>
+                <div class="input">
+                  <label for="last"
+                    >Last Name<input
+                      type="text"
+                      id="last"
+                      name="last-name"
+                      required
+                    />
+                  </label>
+                </div>
+                <div class="input">
+                  <label for="phone"
+                    >Phone Number<input
+                      type="tel"
+                      id="phone"
+                      name="telephone"
+                      title="please enter the correct form"
+                      required
+                    />
+                  </label>
+                </div>
+                <div class="input">
+                  <label for="copwd"
+                    >Conform Password<input
+                      type="password"
+                      id="copwd"
+                      required
+                      name="confirm-password"
+                    />
+                  </label>
+                </div>
               </div>
-              <button></button>
             </form>
           </div>
-          <p class="account"><a href="" class="log-in">Log-in</a></p>
+          <button type="submit" form="form">Create account</button>
+          <p class="account">
+            Already have an account <a href="" class="log-in">Log-in</a>
+          </p>
         </main>
       </div>
     </div>
